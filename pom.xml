@@ -54,6 +54,9 @@
 	      <plugin>
 	        <groupId>com.google.cloud.tools</groupId>
 	        <artifactId>appengine-maven-plugin</artifactId>
+	        <configuration>
+                   <deploy.projectId>sell-smart-249719</deploy.projectId>
+               </configuration>
 	      </plugin>
 	<!-- END plugin -->
 	    </plugins>
