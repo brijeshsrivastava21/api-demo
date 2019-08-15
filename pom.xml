@@ -74,10 +74,10 @@
 	       <!-- <groupId>com.google.appengine</groupId> -->
 	        <artifactId>appengine-maven-plugin</artifactId>
 	        <configuration>
-                   <deploy.projectId>sell-smart-249719</deploy.projectId>
+                   <deploy.projectId>sell-smart-007</deploy.projectId>
 		   			<deploy.version>v1</deploy.version>
 		   			<deployables>
-						<param>target/api-demo-0.0.1-SNAPSHOT/WEB-INF/appengine-web.xml</param>
+						<param>target/api-demo-0.0.1-SNAPSHOT/appengine-web.xml</param>
 					</deployables>
                </configuration>
 	      </plugin>
