@@ -56,18 +56,28 @@
 	          </execution>
 	        </executions>
 	      </plugin>
-	      <plugin>
+	      <!-- <plugin>
 	       <groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>2.0.0-rc2</version>
 	       	 <configuration>
                    <deploy.projectId>sell-smart-007</deploy.projectId>
 		   			<deploy.version>v1</deploy.version>
-		   			<!-- <deployables>
+		   			<deployables>
 						<param>target/api-demo-0.0.1-SNAPSHOT/appengine-web.xml</param>
-					</deployables> -->
+					</deployables>
                </configuration>
-	      </plugin>
+	      </plugin> -->
+	      <plugin>
+		     <groupId>com.google.cloud.tools</groupId>
+		     <artifactId>appengine-maven-plugin</artifactId>
+		     <version>2.0.0</version>
+		     <configuration>
+		       <stage.enableJarSplitting>true</stage.enableJarSplitting>
+		       <deploy.stopPreviousVersion>true</deploy.stopPreviousVersion>
+		       <cloudSdkPath>/usr/foo/path/to/cloudsdk</cloudSdkPath>
+		     </configuration>
+		  </plugin>
 	<!-- END plugin -->
 	    </plugins>
 	  
