@@ -57,25 +57,20 @@
 	        </executions>
 	      </plugin>
 	      <plugin>
-	       <groupId>com.google.appengine</groupId>
+	       <groupId>com.google.cloud.tools</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
-				<version>1.9.63</version>
-	        <configuration>
+				<version>2.0.0-rc2</version>
+	       	 <configuration>
                    <deploy.projectId>sell-smart-007</deploy.projectId>
 		   			<deploy.version>v1</deploy.version>
-		   			<deployables>
+		   			<!-- <deployables>
 						<param>target/api-demo-0.0.1-SNAPSHOT/appengine-web.xml</param>
-					</deployables>
+					</deployables> -->
                </configuration>
 	      </plugin>
 	<!-- END plugin -->
 	    </plugins>
-	    <resources>
-			<resource>
-				<directory>src/main/resources</directory>
-				<filtering>true</filtering>
-			</resource>
-		</resources>
+	  
 	  </build>
 
 </project>
