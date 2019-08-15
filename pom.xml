@@ -59,12 +59,26 @@
 	        </executions>
 	      </plugin>
 	<!-- START plugin -->
+	     <!--  <plugin>
+				<groupId>com.google.appengine</groupId>
+				<artifactId>appengine-maven-plugin</artifactId>
+				<version>1.9.63</version>
+				<configuration>
+					<deployables>
+						<param>target/SpringBootProjectWithSecurity-0.0.1-SNAPSHOT/WEB-INF/appengine-web.xml</param>
+					</deployables>
+				</configuration>
+			</plugin> -->
 	      <plugin>
-	        <groupId>com.google.cloud.tools</groupId>
+	       <!--  <groupId>com.google.cloud.tools</groupId> -->
+	       <groupId>com.google.appengine</groupId>
 	        <artifactId>appengine-maven-plugin</artifactId>
 	        <configuration>
                    <deploy.projectId>sell-smart-249719</deploy.projectId>
-		   <deploy.version>1-0-1</deploy.version>
+		   			<deploy.version>v1</deploy.version>
+		   			<deployables>
+						<param>target/api-demo-0.0.1-SNAPSHOT/WEB-INF/appengine-web.xml</param>
+					</deployables>
                </configuration>
 	      </plugin>
 	<!-- END plugin -->
