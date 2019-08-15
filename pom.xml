@@ -70,8 +70,8 @@
 				</configuration>
 			</plugin> -->
 	      <plugin>
-	       <!--  <groupId>com.google.cloud.tools</groupId> -->
-	       <groupId>com.google.appengine</groupId>
+	       <groupId>com.google.cloud.tools</groupId> 
+	       <!-- <groupId>com.google.appengine</groupId> -->
 	        <artifactId>appengine-maven-plugin</artifactId>
 	        <configuration>
                    <deploy.projectId>sell-smart-249719</deploy.projectId>
