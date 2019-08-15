@@ -8,7 +8,7 @@
 		<version>2.1.7.RELEASE</version>
 		<relativePath>..</relativePath><!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
+	<groupId>com.smart.sell</groupId>
 	<artifactId>api-demo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>api-demo</name>
@@ -28,28 +28,20 @@
 		<dependency>
 		    <groupId>org.eclipse.jetty</groupId>
 		    <artifactId>jetty-server</artifactId>
-		    <version>9.4.19.v20190610</version>
 		</dependency>
 				
 	    <dependency>
 	      <groupId>org.springframework.boot</groupId>
 	      <artifactId>spring-boot-starter-web</artifactId>
-	      <version>2.1.1.RELEASE</version>
 	    </dependency>
 	
-	    <dependency>
-	      <groupId>org.springframework.boot</groupId>
-	      <artifactId>spring-boot-starter-test</artifactId>
-	      <version>2.1.1.RELEASE</version>
-	      <scope>test</scope>
-	    </dependency>
+	   
 	  </dependencies>
 		<build>
 	    <plugins>
 	      <plugin>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-maven-plugin</artifactId>
-	        <version>1.5.7.RELEASE</version>
 	        <executions>
 	          <execution>
 	            <goals>
@@ -58,21 +50,10 @@
 	          </execution>
 	        </executions>
 	      </plugin>
-	<!-- START plugin -->
-	     <!--  <plugin>
-				<groupId>com.google.appengine</groupId>
+	      <plugin>
+	       <groupId>com.google.appengine</groupId>
 				<artifactId>appengine-maven-plugin</artifactId>
 				<version>1.9.63</version>
-				<configuration>
-					<deployables>
-						<param>target/SpringBootProjectWithSecurity-0.0.1-SNAPSHOT/WEB-INF/appengine-web.xml</param>
-					</deployables>
-				</configuration>
-			</plugin> -->
-	      <plugin>
-	       <groupId>com.google.cloud.tools</groupId> 
-	       <!-- <groupId>com.google.appengine</groupId> -->
-	        <artifactId>appengine-maven-plugin</artifactId>
 	        <configuration>
                    <deploy.projectId>sell-smart-007</deploy.projectId>
 		   			<deploy.version>v1</deploy.version>
