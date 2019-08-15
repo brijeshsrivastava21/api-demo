@@ -1,0 +1,12 @@
+#
+# This sample has manual_scaling set to 1.
+#
+runtime: java
+env: flex
+
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+
+manual_scaling:
+  instances: 1
