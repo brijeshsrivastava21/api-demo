@@ -4,4 +4,7 @@
   <version>v1</version><!-- unused for Cloud SDK based tooling -->
   <threadsafe>true</threadsafe>
   <runtime>java8</runtime>
+  <system-properties>
+   <property name="java.util.logging.config.file" value="WEB-INF/logging.properties"/>
+ </system-properties>
 </appengine-web-app>
